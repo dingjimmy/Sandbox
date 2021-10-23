@@ -18,3 +18,11 @@ C:\Users\ding_\Source\Sandbox\OPC Viewer\viewer\obj\Debug\net6.0-windows\Viewer.
 C:\Users\ding_\Source\Sandbox\OPC Viewer\viewer\obj\Debug\net6.0-windows\ref\Viewer.dll
 C:\Users\ding_\Source\Sandbox\OPC Viewer\viewer\obj\Debug\net6.0-windows\Viewer.pdb
 C:\Users\ding_\Source\Sandbox\OPC Viewer\viewer\obj\Debug\net6.0-windows\Viewer.genruntimeconfig.cache
+C:\Users\ding_\Source\Sandbox\OPC Viewer\viewer\obj\Debug\net6.0-windows\Viewer.csproj.AssemblyReference.cache
+C:\Users\ding_\Source\Sandbox\OPC Viewer\viewer\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\ding_\Source\Sandbox\OPC Viewer\viewer\bin\Debug\net6.0-windows\Prism.dll
+C:\Users\ding_\Source\Sandbox\OPC Viewer\viewer\bin\Debug\net6.0-windows\Prism.Unity.Wpf.dll
+C:\Users\ding_\Source\Sandbox\OPC Viewer\viewer\bin\Debug\net6.0-windows\Prism.Wpf.dll
+C:\Users\ding_\Source\Sandbox\OPC Viewer\viewer\bin\Debug\net6.0-windows\Unity.Abstractions.dll
+C:\Users\ding_\Source\Sandbox\OPC Viewer\viewer\bin\Debug\net6.0-windows\Unity.Container.dll
+C:\Users\ding_\Source\Sandbox\OPC Viewer\viewer\obj\Debug\net6.0-windows\Viewer.csproj.CopyComplete

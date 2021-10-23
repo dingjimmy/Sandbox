@@ -96,3 +96,4 @@ C:\Users\ding_\Source\Sandbox\OPC Viewer\Viewer.Tests\obj\Debug\net6.0\Viewer.Te
 C:\Users\ding_\Source\Sandbox\OPC Viewer\Viewer.Tests\obj\Debug\net6.0\ref\Viewer.Tests.dll
 C:\Users\ding_\Source\Sandbox\OPC Viewer\Viewer.Tests\obj\Debug\net6.0\Viewer.Tests.pdb
 C:\Users\ding_\Source\Sandbox\OPC Viewer\Viewer.Tests\obj\Debug\net6.0\Viewer.Tests.genruntimeconfig.cache
+C:\Users\ding_\Source\Sandbox\OPC Viewer\Viewer.Tests\obj\Debug\net6.0\Viewer.Tests.csproj.AssemblyReference.cache
