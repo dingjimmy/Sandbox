@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Viewer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="OPC Viewer" Height="768" Width="1024">
+    <DockPanel Name="container" LastChildFill="True">
+        <DockPanel Width="300" LastChildFill="True" Name="Explorer_Panel">
+            <TextBlock DockPanel.Dock="Top">Explorer</TextBlock>
+            <TreeView DockPanel.Dock="Top">
+                
+            </TreeView>
+        </DockPanel>
+        <DockPanel Name="SavedItems_Panel">
+            <TextBlock DockPanel.Dock="Top">Saved Items</TextBlock>
+            <ListView DockPanel.Dock="Top"></ListView>
+        </DockPanel>
+    </DockPanel>
 </Window>
