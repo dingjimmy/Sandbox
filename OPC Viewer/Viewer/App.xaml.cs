@@ -17,7 +17,7 @@ namespace Viewer
     {
         protected override Window CreateShell()
         {
-            return Container.Resolve<MainWindow>();
+            return Container.Resolve<Views.MainWindow>();
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {

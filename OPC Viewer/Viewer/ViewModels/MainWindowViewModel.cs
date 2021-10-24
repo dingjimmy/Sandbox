@@ -8,17 +8,17 @@ using Unity;
 
 namespace Viewer.ViewModels
 {
-    public class MainViewModel : BindableBase
+    public class MainWindowViewModel : BindableBase
     {
         [Dependency]
-        public ExplorerViewModel Explorer { get; set; }
+        public ExplorerViewModel? Explorer { get; set; }
 
         [Dependency]
-        public SavedItemsViewModel SavedItems { get; set; }
+        public SavedItemsViewModel? SavedItems { get; set; }
 
-        public MainViewModel()
+        public MainWindowViewModel()
         {
-
+            
         }
     }
 }
