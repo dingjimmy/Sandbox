@@ -7,15 +7,38 @@
         mc:Ignorable="d"
         Title="OPC Viewer" Height="768" Width="1024">
     <DockPanel Name="container" LastChildFill="True">
+        
         <DockPanel Width="300" LastChildFill="True" Name="Explorer_Panel">
-            <TextBlock DockPanel.Dock="Top">Explorer</TextBlock>
-            <TreeView DockPanel.Dock="Top">
-                
-            </TreeView>
+            <StackPanel DockPanel.Dock="Top">
+                <DockPanel>
+                    <Button Content="Refresh" DockPanel.Dock="Right" Padding="10" Margin="5"/>
+                    <Button Content="Disconnect" DockPanel.Dock="Right" Padding="10" Margin="5,5,0,5"/>
+                    <Button Content="Connect" DockPanel.Dock="Right" Padding="10" Margin="0,5"/>
+                    <TextBlock Text="Explorer" FontSize="16" FontWeight="Bold" DockPanel.Dock="Top" VerticalAlignment="Center" Padding="5"/>
+                </DockPanel>
+            </StackPanel>
+            <TreeView DockPanel.Dock="Top" d:ItemsSource="{d:SampleData}" />
         </DockPanel>
-        <DockPanel Name="SavedItems_Panel">
-            <TextBlock DockPanel.Dock="Top">Saved Items</TextBlock>
-            <ListView DockPanel.Dock="Top"></ListView>
+        
+        <DockPanel Name="SavedItems_Panel" Margin="5,0,0,0">
+            <StackPanel DockPanel.Dock="Top">
+                <DockPanel LastChildFill="True">
+                    <Button Content="Delete" DockPanel.Dock="Right" Padding="10" Margin="5"/>
+                    <Button Content="Share" DockPanel.Dock="Right" Padding="10" Margin="5,5,0,5"/>
+                    <Button Content="Select All" DockPanel.Dock="Right" Padding="10" Margin="0,5"/>
+                    <TextBlock Text="Saved Items" FontSize="16" FontWeight="Bold" DockPanel.Dock="Right" VerticalAlignment="Center" Padding="5"/>
+                </DockPanel>
+            </StackPanel>
+            <ListView DockPanel.Dock="Top" d:ItemsSource="{d:SampleData}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Foo" />
+                        <GridViewColumn Header="Bar" />
+                        <GridViewColumn Header="Boo" />
+                        <GridViewColumn Header="Far" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
         </DockPanel>
     </DockPanel>
 </Window>
