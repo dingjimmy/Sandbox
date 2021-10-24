@@ -21,19 +21,19 @@ namespace Viewer.ViewModels
         /// Gets a command which when executed begins the process of connecting to a server.
         /// </summary>
         public ICommand ConnectCommand => _ConnectCommand ??= new DelegateCommand(async () => await ConnectAsync(), CanConnect);
-        private DelegateCommand _ConnectCommand;
+        private DelegateCommand? _ConnectCommand;
 
         /// <summary>
         /// Gets a command which when executed disconnects from the current server.
         /// </summary>
         public ICommand DisconnectCommand => _DisconnectCommand ??= new DelegateCommand(async () => await DisconnectAsync(), CanDisconnect);
-        private DelegateCommand _DisconnectCommand;
+        private DelegateCommand? _DisconnectCommand;
 
         /// <summary>
         /// Gets a command which when executed refreshes the tree.
         /// </summary>
         public ICommand RefreshCommand => _RefreshCommand ??= new DelegateCommand(async () => await RefreshAsync(), CanRefresh);
-        private DelegateCommand _RefreshCommand;
+        private DelegateCommand? _RefreshCommand;
 
 
         public ExplorerViewModel()
