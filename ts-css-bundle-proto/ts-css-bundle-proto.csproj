@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ts_css_bundle_proto</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="src\styles.css" />
+  </ItemGroup>
+
+</Project>
