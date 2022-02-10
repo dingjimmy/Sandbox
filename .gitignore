@@ -338,3 +338,5 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/ts-css-bundle-proto/wwwroot/bundle.js
+/ts-css-bundle-proto/wwwroot/bundle.js.LICENSE.txt
