@@ -21,7 +21,8 @@ module.exports = {
     },
     plugins:[
         new HtmlWebpackPlugin({
-            title: 'Vanilla Web App (Auto Generated)'
+            title: 'Vanilla Web App (Auto Generated from Template)',
+            template: 'src/index.html'
         })
     ]
 };
