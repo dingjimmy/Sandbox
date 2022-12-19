@@ -1,0 +1,71 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Backend",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/ts-css-bundle-proto.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Publish Backend",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/ts-css-bundle-proto.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Watch Backend",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/ts-css-bundle-proto.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Build Frontend",
+            "type": "shell",
+            "problemMatcher": ["$tsc"],
+            "command": "npm run build -- --mode=development",
+        },
+        {
+            "label": "Publish Frontend",
+            "type": "shell",
+            "problemMatcher": ["$tsc"],
+            "command": "npm run build -- --mode=production",
+        },
+        {
+            "label": "Watch Frontend",
+            "type": "shell",
+            "problemMatcher": ["$tsc"],
+            "command": "npm run watch -- --mode=development",
+        },
+        {
+            "label": "Build All",
+            "dependsOn":["Build Frontend", "Build Backend"]
+        },
+        {
+            "label": "Publish All",
+            "dependsOn":["Publish Frontend", "Publish Backend"]
+        },
+        {
+            "label": "Watch All",
+            "dependsOn":["Watch Frontend", "Watch Backend"]
+        }
+    ]
+}
