@@ -1,15 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './components/App/App';
+import Viewer from './components/Viewer/Viewer';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <App />
+    <React.StrictMode>
+
+        <Viewer className={'viewer'} tileSources={'https://openseadragon.github.io/example-images/highsmith/highsmith.dzi'} />
+
+        <Viewer style={{ width: '800px', height: '600px', display: 'inline-block' }} tileSources={[
+            'https://openseadragon.github.io/example-images/highsmith/highsmith.dzi',
+            'https://openseadragon.github.io/example-images/highsmith/highsmith.dzi',
+            'https://openseadragon.github.io/example-images/highsmith/highsmith.dzi',
+            'https://openseadragon.github.io/example-images/highsmith/highsmith.dzi'
+        ]} />
+
   </React.StrictMode>
 );
 
