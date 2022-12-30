@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "canvas": "^2.11.0",
     "eslint-config-react-app": "^7.0.1",
     "jest-editor-support": "^30.3.1"
   }
