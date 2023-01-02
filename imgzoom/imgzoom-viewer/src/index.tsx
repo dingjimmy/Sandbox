@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
 
-        <Viewer className={'viewer'} tileSources={'https://openseadragon.github.io/example-images/highsmith/highsmith.dzi'} />
+        <Viewer className={'viewer'} tileSources={'https://raw.githubusercontent.com/openseadragon/openseadragon/master/test/data/testpattern.dzi'} />
 
         <Viewer style={{ width: '800px', height: '600px', display: 'inline-block' }} tileSources={[
             'https://openseadragon.github.io/example-images/highsmith/highsmith.dzi',
