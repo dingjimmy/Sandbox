@@ -1,8 +1,10 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - workout-recorder-webapp
-
+name: Build and deploy 'Workout Recorder' to Azure
+defaults:
+  run:
+    working-directory: ./workout-recorder
 on:
   push:
     branches:
@@ -12,10 +14,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./workout-recorder
-
+    
     steps:
       - uses: actions/checkout@v2
 
