@@ -1,0 +1,15 @@
+# builder image
+FROM node:19 AS workout-base
+WORKDIR /usr/server/app
+COPY ./package.json ./
+RUN npm install
+
+FROM workout-base AS workout-builder
+COPY ./ .
+RUN npm run build
+
+FROM workout-base
+COPY --from=workout-builder ./usr/server/app/build/ ./build/
+COPY --from=workout-builder ./usr/server/app/public/ ./public/
+ENV NODE_ENV=production
+CMD ["npm", "start"]
