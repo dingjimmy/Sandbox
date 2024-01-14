@@ -2,5 +2,6 @@
 {
     public interface IContentBlock
     {
+        public int Position { get; }
     }
 }
